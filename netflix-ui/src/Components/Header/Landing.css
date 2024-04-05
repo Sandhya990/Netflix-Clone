@@ -1,0 +1,524 @@
+.background{
+    background-color: #232323;
+}
+
+.backgroundimage{
+    height: auto;
+    /* background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url('https://assets.nflxext.com/ffe/siteui/vlv3/4da5d2b1-1b22-498d-90c0-4d86701dffcc/98a1cb1e-5a1d-4b98-a46f-995272b632dd/IN-en-20240129-popsignuptwoweeks-perspective_alpha_website_small.jpg'); */
+
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url('https://assets.nflxext.com/ffe/siteui/vlv3/7ca5b7c7-20aa-42a8-a278-f801b0d65fa1/fb548c0a-8582-43c5-9fba-cd98bf27452f/IN-en-20240326-popsignuptwoweeks-perspective_alpha_website_large.jpg');  
+}
+
+.a:link{
+    text-decoration: none;
+    color: none;
+}
+
+
+/* landing page */
+
+.land_intro{
+    width: 100%;
+    height: 87vh;
+    display: grid;
+    place-items: center;
+    margin-top: 70px;
+}
+.land_intro .intro_sub {
+    text-align: center;
+    padding: 0 32px;
+}
+.land_intro .intro_sub .big_head{
+    margin-bottom: 24px;
+}
+.land_intro .intro_sub .big_head h1{
+    font-size: 48px;
+    font-weight: bolder;
+    color:#ffffff;
+    line-height: 40px;
+}
+.membership{
+    margin-bottom: 20px;
+}
+.membership p{
+    font-size: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+.watch_quote{
+    margin-bottom: 20px;
+}
+.watch_quote p{
+    font-size: 20px;
+     color: #ffffff;
+}
+.sign_mail{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;   
+    gap: 8px;     
+    position: relative;
+    margin-bottom: 120px;
+}
+.sign_mail input{
+    width: 400px;
+    height: 50px;
+    background: #111;
+    backdrop-filter: blur(5px);
+    font-size: 16px;
+    border: 1.5px solid #5E5E5E;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #ffffff;
+}
+.sign_mail input::placeholder{
+    color: #ddd;
+    opacity: 0.9;
+}
+.sign_mail input:focus{
+    outline: 2px solid #ffffff;
+}
+.sign_mail a{
+    text-decoration: none;
+}
+.sign_mail button{
+    width: 209px;
+    height: 58px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #E50914;
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.sign_mail button svg{
+    font-weight: 600;
+}
+.sign_mail button:hover{
+    background-color: #C11119;
+}
+.err{
+    position: absolute;
+    top: 105%;left: 14.5%;
+    color: red;
+}
+.err i{
+    color:red;
+    background: transparent;
+}
+.sign_mail input.inperr{
+    outline: none;
+    border: 1px solid red;
+}
+.sign_mail input.inperrgreen{
+    outline: none;
+    border: 1px solid green;
+}
+.err-down{
+    position: absolute;
+    left: 23.5%;
+}
+
+
+/* content 1 starts from here */
+
+.sideheading{
+    padding: 72px 175px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 15px;
+    background: #000;
+    margin-top: 10px;
+}
+
+.sidehead{
+    width: 100%;
+    color: #fff;
+}
+.sidehead h1{
+    font-size: 42px;
+}
+.sidehead p{
+    font-size: 24px;
+    color: #fff;
+}
+.div1{
+    width: 100%;
+    position: relative;
+    overflow: hidden; 
+}
+.div1 img{
+    width: 100%;
+    position: relative;
+    z-index: 15;
+}
+.div1 video{
+    position: absolute;
+    width: 90%;
+    top: 0%;
+    /* top:6%; */
+    left: 8%;
+    z-index: 10;
+    object-fit: contain;
+}
+
+/* content 2 starts from here */
+.strangerbtn{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 18%;
+    right: 18%;
+    bottom: 2%;
+    border: 1px solid #fff;
+    z-index: 20;
+    background: #000;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.stranger{
+    width: 55px;
+    height: 75px;
+}
+.things_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    width: 100%;
+}
+.things h4{
+    color: #fff;
+}
+.things p{
+    margin-top: -20px;
+    color: rgb(2, 2, 156);
+}
+.gif img{
+    width: 45px;
+}
+
+/* content 3 starts from here */
+.div1 img{
+    width: 100%;
+    position: relative;
+    z-index: 15;
+}
+.div3 video{
+    position: absolute;
+    width: 60%;
+    top: 6%;
+    left: 17%;
+    z-index: 10;
+    object-fit: contain;
+}
+
+
+@media(max-width:1260px){
+    .strangerbtn{
+        left: 8%;
+        right: 8%;
+        bottom: 0%;
+    }
+   
+}
+
+@media (max-width:1160px){     
+    .heading{
+        margin-top: 80px;
+        /* margin-bottom: 29px; */
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media(max-width:960px){
+    .sideheading{
+        grid-template-columns:1fr;
+        padding: 72px 32px;
+    }
+
+    .land_intro{
+        height: 77vh;
+        margin: 0px 0px;
+        }
+        .land_intro .intro_sub .big_head h1{
+            font-size: 32px;
+        }
+        .land_intro .intro_sub .membership p{
+            font-size: 18px;
+        }
+        .land_intro .intro_sub .watch_quote p{
+            font-size: 18px;
+        }
+        .sign_opt{
+            padding: 0 0px 0px 0;
+        }
+    
+/* to change the order of the divs */
+    .sideheading2 div:nth-of-type(1){
+        order: 2;
+    }
+    .sideheading2 div:nth-of-type(2){
+        order: 1;
+    }
+    .sideheading4 div:nth-of-type(1){
+        order: 2;
+    }
+    .sideheading4 div:nth-of-type(2){
+        order: 1;
+    }
+
+/* to change the order of the divs */
+    .strangerbtn div:nth-of-type(1){
+        order:1;
+    }
+    .strangerbtn div:nth-of-type(2){
+        order:2;
+    }
+    .things_main div:nth-of-type(1){
+        order:1;
+    } 
+    .things_main div:nth-of-type(2){
+        order:2;
+    } 
+
+
+    .sidehead{
+        text-align: center;
+    }
+    .sidehead h1{
+        font-size: 32px;
+    }
+    .sidehead p{
+        font-size: 18px;
+    }
+    .stranger{
+        width: 45px;
+        height: 68px;
+    }
+    .strangerbtn .gif{
+        width: 48px;
+        height: 48px;
+    }
+    .strangerbtn .things_main .things h4{
+        font-size: 18px;
+    }
+    .strangerbtn .things_main .things p{
+        font-size: 16px
+    }
+    .strangerbtn{
+        left: 20%;
+        right: 20%;
+        bottom: 10%;
+    }
+}
+
+@media (max-width:760px){       
+    .heading{
+        margin-top: 100px;
+        margin-bottom: 29px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .para1{
+        font-size: 25px;
+    }
+    .para2{
+        font-size: 18px;
+    }
+    .email{
+        margin-bottom: 10px;
+    }       
+    .getbtn{
+        width: 180px;
+        height: 42px;
+        font-size: 20px;
+    }
+    .arrow{
+        height: 18px;
+        padding-top: 10px;
+    }
+    .sign_mail{
+        margin-bottom: inherit;
+    }
+
+    .err{
+        position: relative;
+        top: 0%;
+        left: 0%;
+    }
+   
+}
+@media (max-width:759px){
+    .heading{
+        margin-bottom: 2px;
+    }
+
+}
+
+
+@media (max-width:760px){
+
+    .land_intro{
+        height: 67vh;
+        margin-top: 25px;
+    }
+    .sign_mail{
+        padding:  0 32px;
+        grid-template-columns: repeat(1, 1fr);
+   }
+   .sign_mail input{
+       width: 100%;
+       height: 46px;
+       margin-bottom: 10px;
+   }
+   .sign_mail button{
+       font-size: 20px;
+       font-weight: 500;
+       width: auto;
+       height: 46px;
+       padding: 5px 10px;    
+       margin: 0 auto;   
+   }
+}
+
+@media (max-width:650px){
+    .land_intro{
+        height: auto;
+        margin-top: 50px;
+    }
+    .watch_quote p{
+        line-height: 30px;
+    }
+    .sign_mail button{
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width:590px){  
+    .heading{
+        margin-top: 80px;
+        font-size: 15px;
+    }
+    .para1{
+        font-size: 20px;
+    }
+    .para2{
+        font-size: 15px;
+        padding:0 5px ;
+    }
+    .email{
+        width: 250px;
+        height: 35px;
+    }
+    .getbtn{
+        width: 150px;
+        height: 35px;
+        font-size: 20px;
+    }
+    .strangerbtn{
+        left: 20%;right: 20%;
+        bottom: 0%;
+    }
+}
+
+@media(max-width:500px){
+    .stranger{
+        width: 32px;
+        height: 57px;
+    }
+    .strangerbtn .gif{
+        width: 32px;
+        height: 32px;
+    }
+    .strangerbtn .things_main .things h4{
+        font-size: 14px;
+    }
+    .strangerbtn .things_main .things p{
+        font-size: 12px
+    }
+    .strangerbtn{
+        left: 6%;right: 6%;
+        bottom: 0%;
+    }
+    .sidehead .watch{
+        font-size: 25px;
+    }
+}
+
+
+
+@media (max-width:355px){   
+    .heading{
+        margin-top: 60px;
+        font-size: 14px;
+        line-height: 30px;
+    } 
+    .para1{
+        font-size: 15px;
+    }
+    .para2{
+        font-size: 13px;
+    }
+    .email{
+        width: 200px;
+        height: 30px;
+    }
+    .getbtn{
+        width: 95px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .arrow{
+        width: 15px;
+        height: 10px;
+    }   
+}
+
+
+@media (max-width:354px){   
+    .heading{
+        margin-top: 70px;
+        font-size: 14px;
+        line-height: 30px;
+    } 
+    .para1{
+        font-size: 15px;
+    }
+    .para2{
+        font-size: 13px;
+    }
+    .email{
+        width: 200px;
+        height: 30px;
+    }
+    .getbtn{
+        width: 95px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .arrow{
+        width: 15px;
+        height: 10px;
+    }   
+}
+
+@media (max-width:320px){
+    .heading{
+        margin-top: 60px;
+        font-size: 14px;
+        line-height: 30px;
+    } 
+
+}
+
+

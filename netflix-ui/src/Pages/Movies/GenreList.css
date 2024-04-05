@@ -1,0 +1,154 @@
+#GenreListStyle {
+    position: fixed;
+    top: 60px;
+    width: 100%;
+    height: 100px; 
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+    z-index: 4; 
+    color: white;
+  }
+  a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+  }
+
+.discoverTvCont{
+    display: flex;
+    align-items: center;
+    padding-left: 60px;
+    position: relative;
+    top: 20px;
+    justify-content: space-between;
+    background: #000;
+}
+
+.genresbox{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.genres{
+    border: 1px solid whitesmoke;
+    width: 90px;
+    color: white;
+    background:black;
+    padding: 5px;
+    position: relative;
+}
+.genres:hover{
+    cursor: pointer;
+    background-color: rgba(53, 53, 53, 0.8);
+}
+.genresList li{
+    color: white;
+    size: 14px;
+    cursor: pointer;
+}
+.genresList li:hover{
+    text-decoration: underline;
+}
+.upArrow{
+    padding-left: 20px;
+}
+.genresList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    top: 76.5%;
+    background: #000;
+    width: 450px;
+    height: auto;
+    z-index: 2;
+    padding-left: 10px;
+    display: none;
+}
+
+#GenreListStyle.search {
+    display: flex;
+    z-index: 100;
+}
+
+.flitericons{
+    margin-right: 100px;
+    display: flex;
+    padding: 2px;
+}
+.searchGenre{
+    display: flex;
+    top: 76.5%;
+}
+.searchGenre select{
+    background: #000;
+    color: #fff;
+}
+
+#GenreListStyle .flitericons{
+    border: 1px solid white;
+}
+
+#GenreListStyle .flitericons button{
+    color: white;
+    background-color: transparent;
+    padding: 2px 5px;
+}
+
+#GenreListStyle .flitericons .button1{  
+    border:none ;
+    margin-top: -5px;  
+}
+#GenreListStyle  .search .input {
+    width: 0px;
+    text-align: center;
+    background: transparent;
+    outline: none;
+    border: none;
+    z-index: -10;
+    transition: .4s;
+}
+
+#GenreListStyle .search .extend {
+    width: 250px;
+    padding-left: 35px;
+    transition: .5s;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+#GenreListStyle .search .button2{
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+    text-align: center;
+    margin-top: -2px;
+    color: white;  
+    border-left-width: 2px; 
+    border-left-style: solid;
+}
+
+
+
+/* ---media Queries----- */
+
+@media(max-width:960px){
+    #GenreListStyle{
+        top: 50px;
+    }
+}
+
+@media(max-width:800px){
+    .discoverTvCont{
+        display: none;
+    }
+    .flitericons{
+        display: none;
+    }
+}
+

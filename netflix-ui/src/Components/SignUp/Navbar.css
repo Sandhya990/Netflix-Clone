@@ -1,0 +1,53 @@
+.Regnetflix{
+    width: 168px;
+    fill:#E50914;
+    padding: 25px 0px 6px  38px;
+}
+.Regnetflix:hover{
+    cursor: pointer;
+}
+.RegSignin{
+    font-weight: 500;                                                                         
+    font-size: 20px;   
+    color: #333333;
+    padding: 30px 40px 0px 0px ;
+}
+.RegSignin:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.RegNav{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E6E6E6;
+    padding-bottom: 10px;
+}
+
+.RegSigninLink{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+@media (max-width:500px){
+    .Regnetflix{
+        width: 80px;
+        padding: 15px 0px 0px  15px;
+    }
+    .RegSignin{
+        padding: 1px 20px 0px 0px ;
+        font-weight: 300px;
+    }
+}
+@media (max-width:360px){
+    .RegNav{
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .RegSignin{
+        justify-content: center;
+    }
+    
+}

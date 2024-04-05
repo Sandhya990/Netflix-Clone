@@ -1,0 +1,77 @@
+.accordionContainer{
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 2px 165px;
+    margin-top: 10px;
+}
+.faqMainDiv{
+    cursor: pointer;
+}
+.faq{
+    text-align: center;
+    font-size: 42px;
+}
+.accordionCross:hover{
+    background-color: #414141;
+}
+
+.accordionCross{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 8px;
+    color: white;
+    padding: 12px 12px 12px;
+    background-color: #333;
+    margin-bottom: 2px;
+}
+.cross{
+    rotate: 45deg;
+}
+.ItemSpan{
+    font-size: 24px;
+    padding: 10px 5px;
+}
+.accordionPara{
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #333;
+    padding: 12px 12px 12px 12px;
+}
+.accordpara{
+    font-size: 22px;
+    text-align: center;
+}
+.footermail{
+    text-align: center;
+}
+
+@media (max-width:960px){
+    .accordionContainer{
+        padding: 2px 100px;
+    }
+}
+@media (max-width:760px){
+    .accordionContainer{
+        padding: 2px 80px;
+    }
+    .faq{
+        font-size: 28px;
+    }
+}
+@media (max-width:460px){
+    .accordionContainer{
+        padding: 2px 40px;
+    }
+    .faq{
+        font-size: 28px;
+    }
+    .ItemSpan{
+        font-size: 18px;
+    }
+    .accordpara{
+        font-size: 18px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,218 @@
+/* Player component */
+
+#player{
+    width: 100vw;
+    height: 90vh;
+}
+.playerVideo{
+    width: 100vw;
+    height: 98.3vh;
+    object-fit: fill;
+}
+.leftArrowPlayerVideo{
+    z-index: 2;
+    top: 10px;
+    color: #fff;
+    padding-left: 5px;
+    position: absolute;
+
+}
+.leftArrowPlayerVideo:hover{
+    cursor: pointer;
+}
+
+
+/* MainApp Component and RandomMovie styling */
+.MainAppSliderDiv h3{
+    padding-left: 35px;
+    color: #fff;
+    margin-top: 0;
+}
+.MainAppSliderDiv{
+    background: #000;
+}
+.randomDiv{
+    position: relative;
+    background: #000;
+}
+
+.randomImage{
+    width: 100%;
+}
+.movieTitle{
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    color: #fff;
+    left: 5%;
+    font-size: 3rem;
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.42));
+
+}
+
+
+.movieOverview{
+    filter: drop-shadow(1px 1px 10px rgba(0, 0, 0, 0.653));
+    z-index: 1;
+    position: absolute;
+    top: 42%;
+    color: #fff;
+    left: 5%;
+    width: 600px;
+    height: 65px;
+    white-space:wrap;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+.randombtns{
+    left: 5%;
+    top: 55%;
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    z-index: 1;
+}
+.randomPlayButton{
+    color: #000;
+    background: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: larger;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.randomPlayButton:hover{
+    cursor: pointer;
+    background: #C6C5C3;
+}
+.randomMoreInfo{
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    width: 130px;
+    height: 40px;
+    font-size: larger;
+    border-radius: 4px;
+}
+.randomMoreInfo:hover{
+    background: rgba(250, 250, 250, 0.1);
+    cursor: pointer;
+}
+.randomPlay{
+    padding-right: 15px;
+}
+.randomInfoIcon{
+    padding-right: 2px;
+    top: 2px;
+    color: #fff;
+    position: relative;
+}
+
+.actionMovies{
+    margin-top: -160px;
+    position: relative;
+}
+
+
+
+@media(max-width:990px){
+    .movieTitle{
+        top: 20%;
+        left: 3%;
+        font-size: 2.5rem;
+    }
+    .movieOverview{
+        top: 35%;
+        color: #fff;
+        left: 3%;
+        width: 400px;
+    }
+    .randombtns{
+        left: 3%;
+        top: 55%;
+    }
+    .actionMovies{
+        margin-top: -80px;
+        position: relative;
+    }
+}
+
+@media(max-width:800px){
+    .movieTitle{
+        top: 20%;
+        left: 3%;
+        font-size: 2rem;
+    }
+    .movieOverview{
+        top: 35%;
+        color: #fff;
+        left: 3%;
+        width: 400px;
+    }
+    .randombtns{
+        left: 3%;
+        top: 60%;
+    }
+}
+
+
+@media(max-width:600px){
+    .movieTitle{
+        top: 20%;
+        left: 3%;
+        font-size: 1.7rem;
+    }
+    .movieOverview{
+        top: 35%;
+        color: #fff;
+        left: 3%;
+        width: 400px;
+    }
+    .randombtns{
+        left: 3%;
+        top: 65%;
+    }
+    .actionMovies{
+        margin-top: -50px;
+    }
+}
+@media(max-width:500px){
+    .movieTitle, .movieOverview, .randombtns{
+        display: none;
+    }
+    .actionMovies{
+        margin-top: -10px;
+    }
+}
+
+@media(max-width:288px){
+    .randomImage{
+        display: none  !important;
+    }
+
+    .MainAppSliderDiv{
+        padding-top: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* trending component styling */
+.trending{
+    background: #000;
+}
+
+.trending{
+    padding-top: 5rem;
+    color: #fff;
+}

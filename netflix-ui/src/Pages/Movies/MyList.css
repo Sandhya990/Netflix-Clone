@@ -1,0 +1,78 @@
+#main-cards-containe{
+    position: absolute;
+    display: grid;
+    top: 0;
+    padding: 5rem 2rem ;
+    background-color: black;
+    color: #fff;
+    overflow: hidden;
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+    height: 100vh;
+    width: 93.7vw;
+}
+
+#cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    row-gap: 5rem;
+}
+#cardsContainer .Card .imgCard{
+    width: 280px;
+    height: 150px;
+    display: grid;
+    justify-content: center;
+}
+
+#cardsContainer .Card .imgCard .filterItemHover .src{
+    width: 280px;
+    border-radius: 7px;
+}
+
+#cardsContainer .Card .imgCard .filterItemHover .vid{
+    display: none;
+}
+#cardsContainer .Card .imgCard .filterItemHover .content_box h4{
+    color:white;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 220px;
+    text-align: left;
+    font-size: 18px;
+}
+
+#cardsContainer .Card .imgCard .filterItemHover .content_box .icons{
+    size: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 15px;
+    cursor: pointer;
+}
+#cardsContainer .Card .imgCard  .filterItemHover:hover{
+    transform: scale(1.2);
+    z-index: 10;
+    border-radius: 10px;
+    background-color:#212121;
+    transition: .3s; 
+    height: 220px;
+    padding:  2px 0;
+}
+
+#cardsContainer .Card .imgCard .filterItemHover:hover .pic{
+    display: none;
+}
+
+#cardsContainer .Card .imgCard .filterItemHover:hover .vid{
+    display: block;
+    width: 250px;    
+    cursor:auto;
+    border-radius:7px 7px 0 0;   
+    margin-top: -3px;
+    
+}
+
+

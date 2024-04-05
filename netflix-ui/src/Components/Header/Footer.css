@@ -1,0 +1,48 @@
+/* footer styling */
+.footerdiv{
+    background-color: #000;
+    color: grey;
+    padding: 20px 100px;
+    margin-top: 10px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    cursor: pointer;
+    text-decoration: underline;
+}
+.call{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.footerNetflix{
+    font-size: 14px;
+}
+.footermail{
+    padding-bottom: 40px;
+}
+
+@media(max-width:760px){
+    .footerdiv{
+        padding: 20px 50px;
+    }
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .accordpara{
+        font-size: 18px;
+    }
+}
+@media(max-width:300px){
+    .footerdiv{
+        padding: 20px ;
+    }
+    .footer{
+        grid-template-columns: repeat(1, 1fr);
+    } 
+    .accordpara{
+        font-size: 15px;
+    }
+}
+

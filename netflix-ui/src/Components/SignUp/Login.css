@@ -1,0 +1,221 @@
+.LoginBackground{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2),rgba(0,0,0,0.8)),url('https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/29d8d7d7-83cc-4b5f-aa9b-6fd4f68bfaa6/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    height: auto;
+}
+
+.LoginNavbar{
+    padding-left: 150px;
+}
+
+.LoginForm {
+    display: grid;
+    justify-content: center;    
+    align-items: center;
+    grid-template-columns: 450px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+  
+.LoginCont{
+    align-items: center;
+    color: white;
+    padding: 20px 80px 100px 50px;
+    border-radius: 4px;
+    border-radius: 8px;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgba(0,0,0,0.9));
+}
+
+  
+.input-field {
+    position: relative;
+    margin: 15px 0;
+}
+  
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #B8B8B8;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.15s ease;
+    padding: 15px;
+}
+
+.input-field input {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    padding: 10px 0px 0px 15px  ;
+    color: #fff;
+    border-radius: 5px;
+}
+  
+.input-field input:focus~label,
+.input-field input:valid~label {
+    font-size: 0.8rem;
+    top: -0.5px;
+    transform: translateY(-3%);
+    padding: 5px 5px 5px 15px ;
+}
+  
+.LoginButton{
+    width: 103%;
+    height: 40px;
+    border-radius: 4px;
+    border: none;
+    background: #E50914;
+    color: #fff;
+}
+.LoginButton:hover{
+    background-color: #C11119;
+    cursor: pointer;
+}
+.or{
+    text-align: center;
+}
+.use{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    width: 103%;
+    text-align: center;
+    height: 10px;
+    padding: 8px 0 20px 0;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+.use:hover{
+    cursor: pointer;
+    background: rgba(250, 250, 250, 0.021);
+}
+
+.check{
+    display: flex;
+}
+#Save-login {
+    accent-color: #b3b3b3;
+    background: #000;
+    width: 18px;
+    border: #B3B3B3;
+}
+
+.LoginNew{
+    color: #B3B3B3;
+}
+.LoginThis{
+    color: #B3B3B3;
+    font-size: 12px;
+    width: 80%;
+}
+.LoginLearn{
+    color: blue;
+}
+.LoginLearn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.LoginSignUp:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.showPassword{
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    top: -33px;
+    left: 300px;
+}
+
+/* footer */
+.LoginFooter{
+    color: #B3B3B3;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9),rgba(0,0,0,0.9));
+    padding: 60px 150px;
+}
+.LoginDiv{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.LoginDiv p{
+    text-decoration: underline;
+}
+.LoginDiv p:hover{
+    cursor: pointer;
+}
+
+select:focus{
+    outline: 2px solid #fff; 
+}
+
+
+@media(max-width:380px){
+    .showPassword{
+        position: relative;
+        color: #fff;
+        cursor: pointer;
+        top: -33px;
+        left: 250px;
+    }
+}
+
+@media(max-width:330px){
+    .showPassword{
+        left: 200px;
+    }
+}
+
+@media(max-width: 270px){
+    .showPassword{
+        left: 150px;
+    }
+}
+
+@media(max-width: 220px){
+    .showPassword{
+        left: 100px;
+    }
+}
+
+@media(max-width:760px){
+    .LoginFooter{
+        padding: 20px 50px;
+    }
+    .LoginDiv{
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+
+@media (max-width:500px){
+    .LoginNavbar{
+        padding-left: 60px;
+    }
+    .LoginForm{
+        grid-template-columns: auto;
+        margin-top: 10px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width:500px){
+    .LoginCont{
+        padding: 10px 50px 100px 20px;    
+    }
+}
+@media(max-width:360px){
+    .LoginCont{
+        padding: 10px 50px 100px 20px;    
+    }
+    
+    .LoginFooter{
+        padding: 20px ;
+    }
+    .LoginDiv{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

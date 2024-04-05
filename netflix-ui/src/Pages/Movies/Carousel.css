@@ -1,0 +1,66 @@
+/* Carousel component styling */
+
+/* .sliderContainer{
+    background: #000;
+    color: #fff;
+    padding-top: 10px;
+} */
+
+
+/* .slider-container{
+    position: relative;
+    display: grid;
+    row-gap: 2rem;
+    margin-top: -15rem;
+    user-select: none;
+    z-index: 1;   
+} */
+
+.slider-container .box{
+    margin-bottom: -100px;
+}
+.slider-container div h2::-webkit-scrollbar{
+    display: none;
+}
+.slider-container div h2{
+    color: #e5e5e5;
+    padding-left: 3rem;
+    font-size: 24px;   
+}
+
+
+
+/* Carousel component */
+.box h2{
+    padding-left: 35px;
+}
+
+/* -----media queries----- */
+
+@media(max-width:760px){
+    .slider-container .box{
+        margin-top: 100px;
+        transition: .3s;
+    }
+    .slider-container{
+        margin-bottom: 40px;
+        margin-top: 00px;
+    }
+    .slider-container .box h2{
+        margin-top: -0px;
+    }
+}
+
+@media(max-width:290px){
+    .box{
+        padding-top: 100px;
+        transition: .3s;
+    }
+}
+
+
+/* carousel Tv */
+
+.Tvslider-container{
+    color: #fff;
+}

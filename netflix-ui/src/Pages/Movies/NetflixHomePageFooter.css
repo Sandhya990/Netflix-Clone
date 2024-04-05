@@ -1,0 +1,65 @@
+.netHomeFooterdiv{
+    background-color: #000;
+    color: grey;
+    padding: 100px  100px 20px 100px;
+}
+
+.netHomeFooter{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    cursor: pointer;
+}
+.netHomeFooter p{
+    font-size: 14px;
+}
+.netHomeFooter p:hover{
+    text-decoration: underline;
+}
+.call{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.serviceCode{
+    border: 1px solid grey;
+    width: 100px;
+    padding: 5px;
+    font-size: 14px;
+}
+.serviceCode:hover{
+    cursor: pointer;
+    color: white;
+}
+.navIcons{
+    color: #fff;
+    display: flex;
+    gap: 2rem;
+}
+.navIcons div:hover{
+    cursor: pointer;
+}
+.navIcons div{
+    font-size: 22px;
+}
+
+@media(max-width:760px){
+    .netHomeFooterdiv{
+        padding: 100px 50px 20px 50px;
+    }
+    .netHomeFooter{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+}
+@media(max-width:300px){
+    .netHomeFooterdiv{
+        padding: 100px 20px 20px 20px  ;
+    }
+    .netHomeFooter{
+        grid-template-columns: repeat(1, 1fr);
+    } 
+}
+
+@media(max-width:300px){
+    .navIcons{
+        gap: 1rem;
+    }
+}
